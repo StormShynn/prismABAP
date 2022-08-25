@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>PrimsJS - ABAP languages</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <!-- Link css button -->
-    <link rel="stylesheet" href="./main.css" />
-    <!-- Link prismABAP -->
-    <link rel="stylesheet" href="https://prismjs.com/themes/prism.css" />
-    <link
-      rel="stylesheet"
-      href="https://prismjs.com/plugins/line-numbers/prism-line-numbers.css"
-    />
-    <link rel="stylesheet" href="./prism.css" />
-    <link rel="stylesheet" href="./prism-live.css" />
-  </head>
-  <body>
-    <pre class="no-whitespace-normalization">
+<head>
+  <title>PrimsJS - ABAP languages</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- Link css button -->
+  <link rel="stylesheet" href="./main.css" />
+  <!-- Link prismABAP -->
+  <link rel="stylesheet" href="https://prismjs.com/themes/prism.css" />
+  <link rel="stylesheet" href="https://prismjs.com/plugins/line-numbers/prism-line-numbers.css" />
+  <link rel="stylesheet" href="./prism.css" />
+  <link rel="stylesheet" href="./prism-live.css" />
+</head>
+
+<body>
+  <pre class="no-whitespace-normalization">
       <textarea
       name="text"
       class="prism-live language-ABAP line-numbers no-whitespace-normalization"
@@ -38,15 +30,18 @@
       onchange="convert()"></textarea>
     </pre>
 
-    <section id="main" class="language-abap">
-      <pre>
+  <section id="main" class="language-abap">
+    <pre>
         <code id="code" class="prism-live language-ABAP line-numbers no-whitespace-normalization">
           
         </code>
       </pre>
-    </section>
+  </section>
 
-    <!-- <pre>
+  <textarea name="text" class="prism-live language-ABAP line-numbers no-whitespace-normalization" id="txtHtmlStr2"
+    cols="30" rows="10"></textarea>
+
+  <!-- <pre>
       <code class="language-css">
     .some_code{
     
@@ -55,27 +50,24 @@
          </code>
     </pre> -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./prism.js"></script>
-    <script src="./prism-live.js?load=ABAP"></script>
-    <script src="https://prismjs.com/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="./prism.js"></script>
+  <script src="./prism-live.js?load=ABAP"></script>
+  <script src="https://prismjs.com/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css"
       type="text/css"
     /> -->
+<<<<<<< HEAD
     <script type="text/javascript">
       function convert() {
         var input = document.getElementById("txtHtmlStr");
@@ -106,3 +98,31 @@
     </script>
   </body>
 </html>
+=======
+  <script type="text/javascript">
+    function convert() {
+      var input = document.getElementById("txtHtmlStr");
+      var input2 = document.getElementById("txtHtmlStr2");
+      var output = document.getElementById("code");
+      var output2 = document.querySelector("code");
+      output.innerHTML = input.value;
+      input2.innerHTML = output2.textContent;
+    }
+
+    // Optional
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+      "remove-trailing": true,
+      "remove-indent": true,
+      "left-trim": true,
+      "right-trim": true,
+      "break-lines": 80,
+      indent: 2,
+      "remove-initial-line-feed": true,
+      "tabs-to-spaces": 2,
+      "spaces-to-tabs": 2,
+    });
+  </script>
+</body>
+
+</html>
+>>>>>>> ff640e9a117762a9978218a89fbcbc2119c7e46f
